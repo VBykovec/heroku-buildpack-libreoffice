@@ -47,9 +47,14 @@ mkdir -p $(dirname $PROFILE_PATH)
 
 
 # remove vendor docs
+echo "-----> LibreOffice: Remove something"
+echo `ls $HOME/vendor/libreoffice/deps`
 rm -rf $HOME/vendor/libreoffice/deps/shared/gtk-doc
 rm -rf $HOME/vendor/libreoffice/deps/shared/man
 rm -rf $HOME/vendor/libreoffice/program/wizards
+rm -rf $HOME/vendor/libreoffice/deps/lib/libGL.so.8.0.0
+rm -rf $HOME/vendor/libreoffice/deps/share/locale
+echo "-----> LibreOffice: finish remove"
 # add vendor binaries to the path
 
 
